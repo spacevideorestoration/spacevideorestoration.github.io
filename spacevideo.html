@@ -190,7 +190,10 @@
                             }
                         });
                     }
-				}); 
+				}).fail(){
+                    console.log("Failed to call youtube API")
+                    console.log(arguments);
+                }; 
 			}
 			
 			// function which gets called when youtube player is ready
